@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODIFICADOR</title>
+    <script defer src="./comandos.js"></script>
+    <link rel="stylesheet" href="./estilo.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="formulario">
+        <h1>Vamos codificar?</h1>
+        <form>
+            <p>Escreva o texto que deseja codificar: </p>
+            <input id="texto"type="text">
+            <p>Em qual codificação?</p>
+            <div class="radio"">
+                <div class="buttonsRadio">
+                    <p><input type="radio" id="base64" value="base64" name="options">Base64</p>
+                </div>
+                <div class="buttonsRadio">
+                    <p><input type="radio" id="CC" value="CC" name="options">Cifra de César</p>
+                </div>
+            </div>
+            <br>
+            <button id="botao">CODIFICAR</button>
+            <br>
+            <p>Resultado:</p> 
+            <input type="text" id="codificado"> 
+            
+        </form>
+    </div>  
+</body>
+</html>
