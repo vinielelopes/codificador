@@ -18,19 +18,25 @@
             <p>Escreva o texto que deseja codificar: </p>
             <input id="texto"type="text">
             <p>Em qual codificação?</p>
-            <div class="radio"">
+            <div class="radio">
                 <div class="buttonsRadio">
                     <p><input type="radio" id="base64" value="base64" name="options">Base64</p>
                 </div>
                 <div class="buttonsRadio">
-                    <p><input type="radio" id="CC" value="CC" name="options">Cifra de César</p>
+                    <p><input type="radio" id="CC" value="CC" name="options" onclick="cesarCC()")>Cifra de César</p>
+                </div>
+                <div class="seletor" id="seletor">
+                    <p>Selecione a quantidade do distanciamento (chave):</p>
+                    <input type="number" id="quantDis" name="quantDis">
                 </div>
             </div>
             <br>
-            <button id="botao">CODIFICAR</button>
+            <button id="botao" onclick="codificar()">CODIFICAR</button>
             <br>
             <p>Resultado:</p> 
-            <input type="text" id="codificado"> 
+            <div id="codificado"> 
+                
+            </div>
             
         </form>
     </div>  

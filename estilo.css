@@ -12,6 +12,7 @@ body{
 #codificado{
     width: 400px;
     height: 20px;
+    border: 1px solid black;
 }
 #texto{
     width: 400px;
@@ -21,6 +22,8 @@ body{
     width:150px;
     height: 40px;
     font-weight: bold ;
+    color: white;
+    background-color: black;
 }
 form{
     display: contents;
@@ -36,4 +39,8 @@ form{
 *{
     font-family: 'DM Serif Display', serif;
     font-family: 'Roboto Mono', monospace;  
+}
+.seletor{
+    display: none;
+    align-items: center;
 }
