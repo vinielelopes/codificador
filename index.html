@@ -16,14 +16,14 @@
         <h1>Vamos codificar?</h1>
         <form>
             <p>Escreva o texto que deseja codificar: </p>
-            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+            <textarea id="textoUsuario" name="textoUsuario" rows="4" cols="50"></textarea>
             <p>Em qual codificação?</p>
             <div class="radio">
                 <div class="buttonsRadio">
                     <p><input type="radio" id="base64" value="base64" name="options">Base64</p>
                 </div>
                 <div class="buttonsRadio">
-                    <p><input type="radio" id="CC" value="CC" name="options" onclick="cesarCC()")>Cifra de César</p>
+                    <p><input type="radio" id="CC" value="CC" name="options">Cifra de César</p>
                 </div>
                 <div class="seletor" id="seletor">
                     <p>Selecione a quantidade do distanciamento (chave):</p>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <br>
-            <input type='submit' value='CODIFICAR' id="botao" onclick="codificar()">
+            <button type="button" id="botao">CODIFICAR</button>
             <br>
             <p>Resultado:</p> 
 
