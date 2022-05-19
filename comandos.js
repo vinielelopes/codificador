@@ -42,7 +42,7 @@ botaoD.addEventListener("click", function decodificar(letra){
  // funcao para codificar com a cifra de cesar
 function codC (textoUsuario, distanciamento) {
     textoUsuario = texto.value;
-    distanciamento = quantDis.value;
+    distanciamento = Number (quantDis.value);
 
     if (distanciamento < 0) {
       return codificar(textoUsuario, distanciamento + 26);
@@ -53,7 +53,7 @@ function codC (textoUsuario, distanciamento) {
         let texLetra = textoUsuario[i];
   
         if (texLetra.match(/[a-z]/i)) {
-            let code = textoUsuario.charCodeAt(i);
+            let code = Number(textoUsuario.charCodeAt(i));
     
         if (code >= 65 && code <= 90) {
             texLetra = String.fromCharCode(((code - 65 + distanciamento) % 26) + 65);
